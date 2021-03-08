@@ -5,6 +5,24 @@ background-color:black;
 color:green;
 }
 </style>
+<script>
+  var posts = [
+  'this is the first post here. hello world!',
+  'welcome to the new site, you can check back to see if i posted or something like that, but i dont know.'
+  ];
+  var postNumber = posts.length - 1;
+  function viewPost(post){
+  document.getElementById('p').innerText = posts[post];
+  }
+  function postNumberStuff(){
+      document.write( 'There are currently ' + postNumber + ' posts i put on the site. ' + postNumber + ' is the most recent.');
+  }
+  postNumberStuff();
+</script>
 <h1>welcome</h1>
 hello world, welcome to the site.
+<p id='p'></p>
+<p id='pn'></p>
+<textarea id='pin'></textarea>
+<button onclick='viewPost(document.getElementById("pin").value)'>Go</button>
 </html>
