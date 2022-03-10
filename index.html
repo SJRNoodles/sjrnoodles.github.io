@@ -8,6 +8,10 @@ function lucky(){
   var url= "https://sjrnoodles.github.io/" + lucky_list[Math.floor(Math.random() * lucky_list.length)];
   window.location = url;
 }
+function rdr(sub){
+  var url= "https://sjrnoodles.github.io/" + sub;
+  window.location = url;
+}
 function btn(){
   var url= "https://sjrnoodles.github.io/button";
   window.location = url;
@@ -16,7 +20,7 @@ function btn(){
 
 <body>
 <div id="centered">
-<img width="10%" id="imge"src="https://avatars.githubusercontent.com/u/54688233?v=4"><img><button onclick="lucky()">I'm feeling lucky</button><button onclick="btn()">I like clicking buttons</button>
+<img width="10%" id="imge"src="https://avatars.githubusercontent.com/u/54688233?v=4"><img><button onclick="lucky()">I'm feeling lucky</button><button onclick="btn()">I like clicking buttons</button><button onclick="rdr('blog')">Blog</button>
 <hr>
 <h2>Welcome</h2>
 Welcome to the site. I do stuff sometimes. Like webpages, games, and other cool stuff.
